@@ -1,5 +1,12 @@
-## Next.js App Router Course - Starter
-
-This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.
-
-For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
+# [static rendering, dynamic rendering in ssr](https://nextjs.org/learn/dashboard-app/static-and-dynamic-rendering)
+# Fetching data
+- sync fetching -> blocking
+- async fetching like
+```
+    const data = await Promise.all([
+      invoiceCountPromise,
+      customerCountPromise,
+      invoiceStatusPromise,
+    ]);
+```
+Problem: one data request is slower than all the others? -> divide ui into smaller chuck, one component one fetch call so partially render
