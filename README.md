@@ -19,6 +19,6 @@ Problem: one data request is slower than all the others?
 
 # Streaming
 - to isolate `loading.tsx` make a folder with () and put the `loading` and `page` file inside 
-[route groupe](https://nextjs.org/learn/dashboard-app/streaming#fixing-the-loading-skeleton-bug-with-route-groups):
-- escaping the map(filestructure -> route)
+
+- [route groupe](https://nextjs.org/learn/dashboard-app/streaming#fixing-the-loading-skeleton-bug-with-route-groups): escaping the map(filestructure -> route)
   
