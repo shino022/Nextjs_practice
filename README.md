@@ -26,3 +26,6 @@ Problem: one data request is slower than all the others?
     - nextjs is [suspense enabled](https://react.dev/reference/react/Suspense#usage), so it doesn't work in default react unless you use React.lazy bc suspense is built to react to a Promise
     - If one of the child components (without Suspense) has not finished data fetching, it can block the rendering of the parent component, causing the fallback UI of other Suspense-wrapped child components not to be rendered
   
+# Partial Prerendering
+- a way to handle `Suspense`(react) internally at the frame work level(nextjs)
+- with ppr enabled, the suspenses fallback ui is injected (prerendered) into html during build time so it's static
