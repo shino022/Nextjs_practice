@@ -29,3 +29,7 @@ Problem: one data request is slower than all the others?
 # Partial Prerendering
 - a way to handle `Suspense`(react) internally at the frame work level(nextjs)
 - with ppr enabled, the suspenses fallback ui is injected (prerendered) into html during build time so it's static
+
+# Router cache
+- [client side cache](https://nextjs.org/docs/app/building-your-application/caching#router-cache): prefetched, visited
+- use revalidate function to avoid stailed cache
